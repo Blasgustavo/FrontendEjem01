@@ -9,9 +9,10 @@
         *{
             background: papayawhip;
         }
-        div p{
-            background: lime;
-            color: brown;
+        div {
+            background: yellow;
+            width: auto;
+            height: 30px;
         }
         .titulo{
             color: red;
@@ -22,6 +23,28 @@
         p:hover{
             color: blueviolet;
         }
+        .container{
+            display: flex;
+            background: black;
+            height: 500px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item{
+            width: 60px;
+            height: 60px;
+            background: white;
+        }
+        .container .item:nth-child(2n+1){
+            background: violet;
+        }
+        .container2{
+            display: grid;
+            background: red;
+            grid-template-columns: 40px 40px 40px 40px;
+            grid-template-rows:40px 40px 40px 40px;
+         }
+
 
     </style>
 </head>
@@ -35,8 +58,19 @@
     </nav>
     <div class="titulo">Hola</div>
     <div id="titulo2">Hola</div>
-    <div>
-        <p>Increible</p>
+    <div>Bloque</div>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="container2">
+        <div class="item2"></div>
+        <div class="item2"></div>
+        <div class="item2"></div>
+        <div class="item2"></div>
     </div>
 </body>
 </html>
